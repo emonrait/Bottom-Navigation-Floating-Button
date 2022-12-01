@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bottom Navigation Floating Button</string>
+    <string name="statement">Statement</string>
+    <string name="home">Home</string>
+    <string name="beneficiary">Beneficiary</string>
+    <string name="menu">Menu</string>
+</resources>
