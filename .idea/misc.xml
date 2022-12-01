@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Workspace/Android/BottomNavigationFlotaingButton/app/src/main/res/drawable/botom_bar_selector.xml" value="0.17" />
+        <entry key="..\:/Workspace/Android/BottomNavigationFlotaingButton/app/src/main/res/drawable/selector.xml" value="0.17" />
         <entry key="..\:/Workspace/Android/BottomNavigationFlotaingButton/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Workspace/Android/BottomNavigationFlotaingButton/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Workspace/Android/BottomNavigationFlotaingButton/app/src/main/res/layout/fragment_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Workspace/Android/BottomNavigationFlotaingButton/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3681640625" />
       </map>
     </option>
