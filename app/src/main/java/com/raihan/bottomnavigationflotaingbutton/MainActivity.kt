@@ -13,7 +13,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity() {
     private lateinit var bottomNavigationView: BottomNavigationView
     private lateinit var navController: NavController
 
@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             makeText(this, "QR Pay Button Test", LENGTH_SHORT).show()
         }
         bottomNavigationView.setupWithNavController(navController)
-        bottomNavigationView.setOnNavigationItemSelectedListener(this)
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.navigation_home,
@@ -44,36 +43,62 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         bottomNavigationView.setupWithNavController(navController)
-        bottomNavigationView.setOnNavigationItemSelectedListener(this)
+        bottomNavigationView.setOnItemSelectedListener {
+            when (it.itemId) {
+                R.id.navigation_home -> {
+                    findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_home)
 
+                    return@setOnItemSelectedListener true
+                }
+                R.id.navigation_statement -> {
+                    findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_statement)
 
-    }
+                    return@setOnItemSelectedListener true
+                }
+                R.id.navigation_beneficiary -> {
+                    findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_beneficiary)
 
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.navigation_home -> {
-                findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_home)
+                    return@setOnItemSelectedListener true
+                }
+                R.id.navigation_menu -> {
+                    findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_menu)
 
-                return true
+                    return@setOnItemSelectedListener true
+                }
+                else -> return@setOnItemSelectedListener false
+
             }
-            R.id.navigation_statement -> {
-                findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_statement)
-
-                return true
-            }
-            R.id.navigation_beneficiary -> {
-                findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_beneficiary)
-
-                return true
-            }
-            R.id.navigation_menu -> {
-                findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_menu)
-
-                return true
-            }
-            else -> return false
 
         }
 
+
     }
+
+    /* override fun onNavigationItemSelected(item: MenuItem): Boolean {
+         when (item.itemId) {
+             R.id.navigation_home -> {
+                 findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_home)
+
+                 return true
+             }
+             R.id.navigation_statement -> {
+                 findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_statement)
+
+                 return true
+             }
+             R.id.navigation_beneficiary -> {
+                 findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_beneficiary)
+
+                 return true
+             }
+             R.id.navigation_menu -> {
+                 findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_menu)
+
+                 return true
+             }
+             else -> return false
+
+         }
+
+     }*/
 }
