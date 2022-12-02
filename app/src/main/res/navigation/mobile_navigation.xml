@@ -18,13 +18,13 @@
 
     <fragment
         android:id="@+id/navigation_beneficiary"
-        android:name="com.raihan.bottomnavigationflotaingbutton.view.bottomfragment.Home"
+        android:name="com.raihan.bottomnavigationflotaingbutton.view.bottomfragment.Beneficiary"
         android:label="@string/beneficiary"
         tools:layout="@layout/fragment_beneficiary" />
 
     <fragment
         android:id="@+id/navigation_menu"
-        android:name="com.raihan.bottomnavigationflotaingbutton.view.bottomfragment.Home"
+        android:name="com.raihan.bottomnavigationflotaingbutton.view.bottomfragment.Menu"
         android:label="@string/menu"
         tools:layout="@layout/fragment_menu" />
 

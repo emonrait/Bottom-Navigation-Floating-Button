@@ -9,6 +9,11 @@
         <entry key="..\:/Workspace/Android/BottomNavigationFlotaingButton/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
         <entry key="..\:/Workspace/Android/BottomNavigationFlotaingButton/app/src/main/res/layout/fragment_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Workspace/Android/BottomNavigationFlotaingButton/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3681640625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.29025641025641025" />
+        <entry key="app/src/main/res/layout/fragment_beneficiary.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/layout/fragment_statement.xml" value="0.2947916666666667" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.2947916666666667" />
       </map>
     </option>
   </component>
