@@ -48,7 +48,6 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_home -> {
                     findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_home)
 
-
                     return@setOnItemSelectedListener true
                 }
                 R.id.navigation_statement -> {
