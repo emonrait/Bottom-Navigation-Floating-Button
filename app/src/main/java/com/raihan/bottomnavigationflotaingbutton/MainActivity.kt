@@ -2,8 +2,6 @@ package com.raihan.bottomnavigationflotaingbutton
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
-import android.widget.Toast
 import android.widget.Toast.*
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
@@ -32,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         fab_QR.setOnClickListener {
             makeText(this, "QR Pay Button Test", LENGTH_SHORT).show()
         }
-        bottomNavigationView.setupWithNavController(navController)
+      //  bottomNavigationView.setupWithNavController(navController)
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.navigation_home,
@@ -74,31 +72,4 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    /* override fun onNavigationItemSelected(item: MenuItem): Boolean {
-         when (item.itemId) {
-             R.id.navigation_home -> {
-                 findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_home)
-
-                 return true
-             }
-             R.id.navigation_statement -> {
-                 findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_statement)
-
-                 return true
-             }
-             R.id.navigation_beneficiary -> {
-                 findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_beneficiary)
-
-                 return true
-             }
-             R.id.navigation_menu -> {
-                 findNavController(R.id.nav_host_fragment).navigate(R.id.navigation_menu)
-
-                 return true
-             }
-             else -> return false
-
-         }
-
-     }*/
 }
